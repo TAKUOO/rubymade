@@ -1,0 +1,173 @@
+
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>デザインとサービスづくりのポートフォリオ | RUBYMADE</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="「" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- stylesheet  -->
+  <link rel="stylesheet" type="text/css" href="css/import.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 追加stylesheet  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- 追加javascript  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/wow.js"></script>
+
+
+  <!-- グーフルフォント追加 -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
+  <script type="text/javascript">
+      $(document).ready(function() {
+          //アニメーションスピード
+          var scrollSpeed = 0.1;
+          //画像サイズ
+          var imgWidth = 2000;
+          //画像の位置
+          var posX = 0;
+          //ループ処理
+          fadeTimer = setInterval(function() {
+              //画像のサイズまで移動したら0に戻る。
+              if (posX >= imgWidth) {
+                  posX = 0;
+              }
+              posX += scrollSpeed;
+              $('#first_view_area').css("background-position", posX + "px 0");
+          }, 1);
+      });
+  </script>
+
+  <!-- フェードアクション  -->
+  <script>
+      new WOW().init();
+  </script>
+
+  <!-- webFONT -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:500,700" rel="stylesheet">
+</head>
+
+
+<body id="home">
+    <section id="first_view" class="flex_all">
+       <h1>RUBYMADE<br>LABORATORY.</h1>
+       <p class="lead">DESIGN&#32;&amp;&#32;PROGRAMING&#32;&amp;&#32;SERIVCE</p>
+      <div class="circle pulse">
+        <p class="circle_img01"></p>
+        <p class="circle_img02"></p>
+        <p class="circle_img03"></p>
+      </div>
+      <a class="btn_scroll scroll_down"><span class="scroll_bar"></span>scroll</a>
+    </section>
+
+    <header id="global-navigation">
+    </header>
+
+    <section id="intro" class="flex_all wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+      <div class="content">
+        <figure><img src="img/teliha.jpg" alt="照り葉" width="750" height="auto"></figure>   
+        <p class="title">LIVE IN FUKUOKA,JAPAN<br>MY FAVORIT PLACE</p>
+      </div>
+    </section>
+
+    <section id="message" class="flex_center wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+       <div class="content">
+        <h2>MESSAGE</h2>
+        <p class="text">福岡で「RUBY DESIGN.」という名で活動しているデザインとプログラミング、サービスづくりのポートフォリサイトです。このサイトをものづくり中心の場、研究や実験の場にしたいと思い「RUBY MADE LABORATORY.」という名前をつけました。どうぞよろしくお願いします。</p>
+      </div>
+    </section>
+
+    <section id="about" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+      <h2>PROFILE</h2>
+      <figure><img src="img/img_profile.jpg" alt="マツイタカフミ"></figure>
+      <div class="profile">
+        <p>
+          <span class="position">DESIGNER</span>
+          <span class="name">松井 貴史</span>
+          <span class="kana">TAKAFUMI MATSUI</span>
+        </p>
+         <p class="text">熊本生まれ。バックメーカーでのプロダクトデザイナー、旅館・ホテル専門の制作会社のWEB制作チームを経て2014年に独立し、フリーランスとしてのキャリアをスタートし、UIを中心のプロダクトデザイン設計を行う。</p>
+      </div>
+      <div class="skill">
+        <h2>SKILLS</h2>
+        <ul class="lavel flex_center">
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>XD</li>
+          <li>sketch</li>
+          <li>Wordpress</li>
+          <li>html/css</li>
+        </ul>
+      </div>
+      <div class="sns">
+        <h2>SNS</h2>
+        <ul class="share flex_center">
+          <li><a href="https://twitter.com/takuo0327" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a></li>
+          <li><a href="https://www.instagram.com/takafumi_matsui/?hl=ja" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a></li>
+          <li><a href="https://github.com/TAKUOO" target="_blank"><i class="fab fa-github fa-fw"></i>Git hub</a></li>
+        </ul>
+      </div> 
+    </section>
+
+    <section id="products" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+      <h2>PRODUCTS</h2>
+      <div class="unit flex">
+        <article>
+          <figure class="img"></figure>
+          <div class="contents">
+            <h3>起業戦闘力</h3>
+            <p class="text">連続起業家 正田圭さんが運営する「pedia salon」とのコラボWebサービス。あなたの今の起業戦闘力を1分でチェック！</p>
+          </div> 
+        </article>
+        <article>
+          <figure class="img"></figure>
+          <div class="contents">
+            <h3>kintt-post</h3>
+            <p class="text">もう着ない服があるけど、売ってもお金にはならないし、捨てるのももったいない...それなら必要としている人にプレゼントとして譲りたい！！そんな思いで始まったプロジェクト</p>
+          </div> 
+        </article>
+      </div>
+    </section>
+
+    <section id="link" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+      <h2>参加コミュニティ</h2>
+      <div class="unit flex">
+        <article>
+          <figure class="img"></figure>
+          <div class="contents">
+            <h3>入江開発室</h3>
+            <p class="text">入江開発室は「WEBサービスをつくって生きていく」という理念のもとに、様々な人が集まった開発者集団です。</p>
+          </div>
+        </article>
+        <article>
+          <figure class="img"></figure>
+          <div class="contents">
+            <h3>We love blog</h3>
+            <p class="text">タダケンが運営する「ブログを週一で更新する会」のサイトです。メンバーのブログが更新状況ともに一覧できます</p>
+          </div> 
+        </article>
+      </div>
+    </section>
+    
+    <footer class="flex_all">
+      <div class="contents">
+        <h2>CONTACT</h2>
+        <p class="lead">参加コミュニィやサービスについてご質問やご相談は、下記の相談ボタンまたは、ツイッターから遠慮なくご連絡ください。</p>
+        <div class="btn_unit">
+          <p class="btn"><a href="mailto:matsui@rubydesing.jp">相談してみる</a></p>
+          <p class="btn work"><a href="https://rubydesign.jp/" target="_blank">制作実績はこちら</a></p>
+        </div>     
+        <p class="copyright">©rubymade.</p>
+      </div>
+    </footer>
+</body>
+
+</html>

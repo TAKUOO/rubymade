@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  :import.css
+author     :bebimachi
+style info  :設定　ハックは最下部に記述
+=================================================================== */
+@import url("./default.css");
+@import url("./common.css");
+@import url("./home.css");
+@import url("./animate.css");
+@import url("./animations.css");
+@import url("./style_sp.css")screen and (max-width: 750px);
+

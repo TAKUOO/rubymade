@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+file name  :common.css
+author     :bebimachi
+style info  :設定　ハックは最下部に記述
+=================================================================== */
+
+/*----------------------------------------------------
+    #first_view
+----------------------------------------------------*/
+#first_view{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    max-width: 100%;
+}
+#first_view h1{
+    text-align: justify;
+    font-size: 4rem;
+    z-index: 2;
+    line-height: 1.2;
+    color: #000;
+}
+#first_view .lead{
+    position: absolute;
+    left: -80px;
+    bottom: 50%;
+    font-size: 1.2rem;
+    transform: translateY(50%);
+    transform: rotate(90deg);
+}
+#first_view .circle{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+}
+#first_view .circle .circle_img01{
+    width: 220px;
+    height: 220px;
+    background: #EC0053;
+    -moz-filter: blur(60px);
+    -o-filter: blur(60px);
+    -ms-filter: blur(60px);
+    filter: blur(60px);
+    /* display: inline-block; */
+    border-radius: 50%;
+    margin-top: -130px;
+}
+#first_view .circle .circle_img02{
+    width: 220px;
+    height: 220px;
+    background: #F3E015;
+    -moz-filter: blur(70px);
+    -o-filter: blur(70px);
+    -ms-filter: blur(70px);
+    filter: blur(70px);
+    position: absolute;
+    top: -170px;
+    left: -70px;
+    z-index: -2;
+}
+#first_view .circle .circle_img03{
+    width: 220px;
+    height: 220px;
+    background: #A602A7;
+    -moz-filter: blur(70px);
+    -o-filter: blur(70px);
+    -ms-filter: blur(70px);
+    filter: blur(70px);
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    z-index: -1;
+}
+#first_view .btn_scroll,
+#first_view .scroll_down{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #000;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+#first_view .scroll_down .scroll_bar{
+    display: block;
+    height: 42px;
+    width: 1px;
+    background: #fff;
+    margin: 0 auto 10px;
+    position: relative;
+    overflow: hidden;    
+}
+#first_view .scroll_down .scroll_bar:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    -webkit-animation-name: loopScrollBar;
+    animation-name: loopScrollBar;
+    -webkit-animation-duration: 2.2s;
+    animation-duration: 2.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;   
+}
+/*----------------------------------------------------
+    #intro
+----------------------------------------------------*/
+#intro,
+#message{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+} 
+#intro .title{
+    color: #9C9C9C;
+    font-size: 2rem;
+    margin: 30px 0 0;
+}
+
+/*----------------------------------------------------
+    #message
+----------------------------------------------------*/
+#message h2{
+    text-align: center;
+}
+#message .text{
+    padding:0 20px;
+}
+/*----------------------------------------------------
+    #about
+----------------------------------------------------*/
+#about figure{
+    margin-bottom: 60px;
+}
+#about .profile,
+#about .skill{
+    margin-bottom: 60px;
+}
+#about .position{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+#about .name{
+    font-size: 2.2rem;
+}
+#about .kana,
+#about .date,
+#about .place{
+    font-size: 1.2rem;
+    color: #9C9C9C;
+    margin-left: 10px;
+}
+#about .text{
+    margin-top: 20px;
+}
+#about .skill .lavel li,
+#about .sns .share li{
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    padding: 10px 0;
+    border-radius: 4px;
+    margin: 5px 2% 5px 0;
+    width: 32%;
+}
+#about .sns .share li a:after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 0 1px 0 1px;
+    border-right: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    -webkit-transform: translate(-50%, -110%) rotate(-45deg);
+    transform: translate(-50%, -110%) rotate(-45deg);
+}
+#about .sns .share li i{
+    padding-right: 30px;
+    font-size: 1.8rem;
+}
+#about .sns .share li{
+   border: none;
+   margin-top: 0;
+   margin-bottom: 0; 
+}
+#about .sns .share li a{
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    position: relative;
+}
+#about .skill .lavel li:nth-child(3n),
+#about .sns .share li:nth-child(3n){
+    margin-right: 0;
+}
+#about .btn.work{
+    text-align: left;
+    max-width: 100%;
+    margin: 40px auto;
+    overflow: hidden;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-size: 1.8rem;  
+}
+#about .btn.work a{
+    position: relative;
+}
+#about .btn.work a:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 0 1px 0 1px;
+    border-right: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    -webkit-transform: translate(-50%, -110%) rotate(-45deg);
+    transform: translate(-50%, -110%) rotate(-45deg);    
+}
+/*----------------------------------------------------
+    #products, #link
+----------------------------------------------------*/
+#link .unit article,
+#products article{
+    max-width: 350px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(158, 158, 158, 0.2);
+}
+#link .unit article,
+#products .unit article{
+    margin-right: 50px;
+}
+#link .unit article:nth-child(2n),
+#products .unit article:nth-child(2n){
+    margin-right: 0;
+}
+#products .unit article .contents,
+#link .unit article .contents{
+    padding: 40px 30px;
+    box-sizing:border-box;
+}
+#products  .unit article .img,
+#link .unit article .img{
+    background: #ccc;
+    display: block;
+    height: 200px;
+}
+#link .unit article h3,
+#products .unit article h3{
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
